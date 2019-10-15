@@ -1,0 +1,94 @@
+.box {
+    height: 150px;
+    width: 150px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    animation: fly 6s ease-in-out infinite alternate;
+    animation-name: fly;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(.9,1.24,0,-0.53);
+    animation-iteration-count: infinite;
+}
+
+/*
+.main {
+    width: 800px;
+    height: 300px;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px black;
+    background-color: burlywood;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.wrapper {
+    margin-left: -300px;
+    animation: slider 6s linear infinite alternate;
+}
+
+.slide {
+    width: 300px;
+    height: 250px;
+    background-color: coral;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px black;
+    margin: 2px;
+    display: inline-block;
+}
+*/
+
+
+/*
+@keyframes slider {
+    0% {
+        margin-left: -300px;
+    }
+    
+    25% {
+        margin-left: -200px;
+    }
+    
+    50% {
+        margin-left: -100px;
+    }
+    
+    75% {
+        margin-left: 100px;
+    }
+    
+    100% {
+        margin-left: 300px;
+    }
+}
+*/
+
+
+@keyframes fly {
+    0% {
+        top: 250px;
+        left: 250px;
+    }
+    
+    25% {
+        top: 400px;
+        left: 500px;
+        border-radius: 50%;
+    }
+    
+    50% {
+        top: 300px;
+        left: 350px;
+        border-radius: 10px;
+        transform: rotate(360deg);
+        transform: scale(30deg, 10deg);
+    }
+    
+    100% {
+        left: 700px;
+        border-radius: 0px;
+    }
+}
